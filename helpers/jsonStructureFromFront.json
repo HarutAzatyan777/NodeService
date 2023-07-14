@@ -1,0 +1,304 @@
+{
+    "id": 1,
+    "serviceName": "PMG",
+    "price": 9999,
+    "name": "Permanent Residency",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "name": "Required data",
+        "subName": "Fill in your personal information",
+        "controls": true,
+        "inputs": [
+          {
+            "id": "personalInformationTitle",
+            "type": "title",
+            "title": "Personal information"
+          },
+          {
+            "id": "firstName",
+            "type": "text",
+            "name": "firstName",
+            "title": "First Name",
+            "className": "input",
+            "required": true,
+            "errorMsg": "First Name cannot contain numbers",
+            "regex": "/^[a-zA-Z]+$/"
+          },
+          {
+            "id": "lastName",
+            "type": "text",
+            "name": "lastName",
+            "title": "Last Name",
+            "className": "input",
+            "required": true,
+            "errorMsg": "Last Name cannot contain numbers",
+            "regex": "/^[a-zA-Z]+$/"
+          },
+          {
+            "id": "middleName",
+            "type": "text",
+            "name": "middleName",
+            "title": "Middle Name",
+            "className": "input",
+            "required": true,
+            "errorMsg": "Middle Name cannot contain numbers",
+            "regex": "/^[a-zA-Z]+$/"
+          },
+          {
+            "id": "birthCountryTitle",
+            "type": "title",
+            "title": "Place of birth"
+          },
+          {
+            "id": "birthCountry",
+            "type": "dropdown",
+            "name": "birthCountry",
+            "title": "birthCountry",
+            "className": "input select-input",
+            "errorMsg": "Field is required",
+            "required": true,
+            "options": [
+              {
+                "label": "Armenia",
+                "value": "armenia"
+              },
+              {
+                "label": "Russia",
+                "value": "russia"
+              }
+            ]
+          },
+          {
+            "id": "birthDate",
+            "title": "Birth date",
+            "name": "birthDate",
+            "type": "date",
+            "required": true,
+            "className": "text"
+          },
+          {
+            "id": "passportDetails",
+            "type": "title",
+            "title": "Passport details"
+          },
+          {
+            "id": "citizenship",
+            "type": "dropdown",
+            "name": "citizenship",
+            "title": "Citizenship",
+            "className": "input select-input",
+            "errorMsg": "Field is required",
+            "required": true,
+            "options": [
+              {
+                "label": "Armenia",
+                "value": "armenia"
+              },
+              {
+                "label": "Russia",
+                "value": "russia"
+              }
+            ]
+          },
+          {
+            "id": "passportSerialNumber",
+            "type": "text",
+            "name": "passportSerialNumber",
+            "title": "Passport serial number",
+            "className": "textInput",
+            "required": true,
+            "errorMsg": "Field is required",
+            "regex": "^[A-Z][0-9]{8}$"
+          },
+          {
+            "id": "passportIssueDate",
+            "title": "Date of issue",
+            "name": "passportIssueDate",
+            "type": "date",
+            "required": true,
+            "className": "text"
+          },
+          {
+            "id": "passportIssuingAuthority",
+            "type": "text",
+            "name": "passportIssuingAuthority",
+            "title": "Issuing authority",
+            "className": "input",
+            "required": true
+          },
+          {
+            "id": "nationality",
+            "type": "dropdown",
+            "name": "nationality",
+            "title": "Nationality",
+            "className": "input select-input",
+            "errorMsg": "Field is required",
+            "required": true,
+            "options": [
+              {
+                "title": "Armenian",
+                "value": "armenian"
+              },
+              {
+                "title": "Russian",
+                "value": "russian"
+              }
+            ]
+          },
+          {
+            "id": "actualAddress",
+            "type": "title",
+            "title": "Actual address in Armenia"
+          },
+          {
+            "id": "residenceCity",
+            "type": "dropdown",
+            "name": "residenceCity",
+            "title": "City",
+            "className": "input select-input",
+            "errorMsg": "Field is required",
+            "required": true,
+            "options": [
+              {
+                "title": "Yerevan",
+                "value": "Yerevan"
+              },
+              {
+                "title": "Gyumri",
+                "value": "Gyumri"
+              }
+            ]
+          },
+          {
+            "id": "address",
+            "type": "text",
+            "name": "address",
+            "title": "Actual address in Armenia",
+            "className": "input",
+            "required": true,
+            "errorMsg": "Field is required"
+          },
+          {
+            "id": "maritalStatus",
+            "type": "radio",
+            "name": "maritalStatus",
+            "title": "Are you married?",
+            "required": true,
+            "styleType": "type-1",
+            "className": "radioInput",
+            "errorMsg": "Please select reason",
+            "options": [
+              {
+                "title": "Yes",
+                "value": "yes"
+              },
+              {
+                "title": "No",
+                "value": "no"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "stepNumber": 2,
+        "name": "Basis for document submission",
+        "subName": "Select the basis for document submission",
+        "controls": true,
+        "inputs": [
+          {
+            "id": "business",
+            "type": "radio-box",
+            "name": "business",
+            "required": true,
+            "errorMsg": "Please select reason",
+            "options": [
+              {
+                "id": "business_1",
+                "title": "Entrepreneurial activity in the territory of the Republic of Armenia",
+                "price": 250000,
+                "description": "You are a member of a company (20 percent or more) or an individual entrepreneur registered in accordance with the legislation of the Republic of Armenia."
+              },
+              {
+                "id": "business_2",
+                "title": "Armenian by nationality",
+                "price": 0,
+                "description": "The nationality line in your passport and birth certificate and/or your parent's is Armenian"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Required Documents",
+        "subName": "Attach the available documents and / or get them with our help",
+        "stepNumber": 3,
+        "controls": true,
+        "inputs": [
+          {
+            "id": "proofOfNationality",
+            "type": "file",
+            "name": "proofOfNationality",
+            "title": "Proof of nationality",
+            "reminder": "Proof of nationality documents reminder content",
+            "className": "input",
+            "secondBtn": "receive",
+            "required": true,
+            "multiple": false,
+            "errorMsg": "Field is required"
+          },
+          {
+            "id": "passportTranslation",
+            "type": "file",
+            "name": "passportTranslation",
+            "title": "Notarized translation of the passport",
+            "reminder": "Please provide the scan",
+            "className": "input",
+            "secondBtn": "Receive",
+            "required": true,
+            "multiple": false,
+            "errorMsg": "Field is required"
+          },
+          {
+            "id": "photos_35x45",
+            "type": "file",
+            "name": "photos_35x45",
+            "title": "3 color photos 35x45mm",
+            "reminder": "some text",
+            "secondBtn": "Get on the spot",
+            "className": "input",
+            "required": true,
+            "multiple": false,
+            "errorMsg": "Field is required"
+          },
+          {
+            "id": "healthCertificate",
+            "type": "file",
+            "name": "healthCertificate",
+            "title": "Health certificate",
+            "reminder": "some text",
+            "className": "input",
+            "secondBtn": "Book a visit to the clinic",
+            "required": true,
+            "multiple": false,
+            "errorMsg": "Field is required"
+          }
+        ]
+      },
+      {
+        "name": "Date and time of appearance",
+        "subName": "Choose when will you go to the Department of Passports and Visas",
+        "stepNumber": 4,
+        "controls": true,
+        "inputs": [
+          {
+            "id": "appearanceDate",
+            "type": "calender",
+            "name": "appearanceDate",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }

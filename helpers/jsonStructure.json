@@ -1,0 +1,108 @@
+{
+  "firstName": {
+    "type": "text",
+    "required": true,
+    "errorMsg": "First Name cannot contain numbers",
+    "regex": "^[a-zA-Z]+$"
+  },
+  "lastName": {
+    "type": "text",
+    "required": true,
+    "errorMsg": "Last Name cannot contain numbers",
+    "regex": "^[a-zA-Z]+$"
+  },
+  "middleName": {
+    "type": "text",
+    "required": true,
+    "errorMsg": "Middle Name cannot contain numbers",
+    "regex": "^[a-zA-Z]+$"
+  },
+  "birthCountry": {
+    "type": "dropdown",
+    "errorMsg": "Field is required",
+    "required": true
+  },
+  "birthDate": {
+    "type": "date",
+    "required": true
+  },
+  "citizenship": {
+    "type": "dropdown",
+    "errorMsg": "Field is required",
+    "required": true
+  },
+  "passportSerialNumber": {
+    "type": "text",
+    "required": true,
+    "errorMsg": "Field is required",
+    "regex": "^[A-Z][0-9]{8}$"
+  },
+  "passportIssueDate": {
+    "type": "date",
+    "required": true
+  },
+  "passportIssuingAuthority": {
+    "type": "text",
+    "name": "passportIssuingAuthority",
+    "title": "Issuing authority",
+    "required": true
+  },
+  "nationality": {
+    "type": "dropdown",
+    "errorMsg": "Field is required",
+    "required": true
+  },
+  "actualAddress": {
+    "type": "title"
+  },
+  "residenceCity": {
+    "type": "dropdown",
+    "required": true
+  },
+  "address": {
+    "type": "text",
+    "required": true,
+    "errorMsg": "Field is required"
+  },
+  "maritalStatus": {
+    "type": "radio",
+    "required": true,
+    "errorMsg": "Please select reason"
+  },
+  "business": {
+    "title": "Entrepreneurial activity in the territory of the Republic of Armenia"
+  },
+  "business_2": {
+    "title": "Armenian by nationality"
+  },
+  "proofOfNationality": {
+    "type": "file",
+    "required": true,
+    "multiple": false,
+    "errorMsg": "Field is required"
+  },
+  "passportTranslation": {
+    "type": "file",
+    "required": true,
+    "multiple": false,
+    "errorMsg": "Field is required"
+  },
+  "photos_35x45": {
+    "id": "photos_35x45",
+    "type": "file",
+    "required": true,
+    "multiple": false,
+    "errorMsg": "Field is required"
+  },
+  "healthCertificate": {
+    "type": "file",
+    "required": true,
+    "multiple": false,
+    "errorMsg": "Field is required"
+  },
+  "appearanceDate": {
+    "type": "calendar",
+    "required": true
+  }
+}
+
